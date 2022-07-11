@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -29,9 +31,32 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    // databinding
+    dataBinding {
+        enabled true
+    }
 }
 
 dependencies {
+
+    // retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.4'
+    // Gson converter
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.4'
+
+    def lifecycle_version = "2.3.0"
+    // viewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // liveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    //hilt
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-compiler:2.38.1"
+
+    //http logger
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.5.0'
+    // Use for HttpLoggingInterceptor
+    implementation group: 'com.squareup.okhttp3', name: 'logging-interceptor', version: '4.5.0'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.2'
