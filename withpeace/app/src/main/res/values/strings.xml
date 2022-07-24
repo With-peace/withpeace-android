@@ -14,4 +14,7 @@
     <string name="sign_in_google">Google로 로그인</string>
     <string name="sign_in_with_admin">관리자 로그인 하러가기</string>
     <string name="sign_in_sign_up_admin">관리자 회원가입 ></string>
+
+<!--   관리자 로그인 -->
+    <string name="sign_in_first_admin">아직 관리자 권한을 받지 못하셨나요?</string>
 </resources>
