@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">withpeace</string>
+    
+<!--  로그인  -->
+    <string name="sign_in_hint_enter_id">아이디를 입력해주세요</string>
+    <string name="sign_in_hint_enter_password">비밀번호를 입력해주세요</string>
+    <string name="sign_in_admin_login">관리자 로그인</string>
+    <string name="sign_in">로그인</string>
+    <string name="sign_in_first_with_peace">위드피스에 처음 방문하셨나요?</string>
+    <string name="sign_in_sign_up">회원가입 ></string>
+    <string name="sign_in_with_sns">SNS로 간편 로그인하기</string>
+    <string name="sign_in_kakao">카카오톡으로 로그인</string>
+    <string name="sign_in_naver">네이버로 로그인</string>
+    <string name="sign_in_google">Google로 로그인</string>
+    <string name="sign_in_with_admin">관리자 로그인 하러가기</string>
+    <string name="sign_in_sign_up_admin">관리자 회원가입 ></string>
 </resources>
